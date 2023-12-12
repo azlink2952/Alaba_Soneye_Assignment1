@@ -2,20 +2,85 @@
     <h2>Application form</h2>
     <h4>Fill in your details</h4>
     <form action="/submit" method="post">
-        <label for="">First name</label>
-        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name">
-        <label for="">Last name</label>
-        <input type="text" name="Lastname" id="Lastname" placeholder="Enter your last name" minlength="8"> <br><br>
-        <label for="">Gender</label>
-        <input type="text" name="Gender" id="Gender" placeholder="Gender" minlength="8">
-        <label for="">Date of Birth</label>
-        <input type="date" name="date" id="date"><br><br>
-        <label for="">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter email" minlength="15">
-        <label for="">Phone number</label>
-        <input type="number" name="number" id="number" placeholder="08125889674" minlength="1"> <br><br>
+       <div class="for">
+        <div class="fo">
+        <label for="fname">First Name<span class="required">*</span></label><br>
+        <input aria-describedby="required-description" type="text" name="" id="" placeholder="Enter first name"> <br><br>
+        <label for="Gender">Gender<span class="required">*</span></label><br>
+        <select  class="gender" required>
+            <option value="" disabled selected hidden>Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select> <br> <br>
+        <label for="email">Email Address<span class="required">*</span></label><br>
+        <input type="text" name="" id="" placeholder="Enter email address"><br><br>
+        <label for="Country">Country<span class="required">*</span></label><br>
+        <select class="gender" required>
+            <option value="" disabled selected hidden>Select your country</option>
+            <option>Nigeria</option>
+            <option>Ghana</option>
+        </select> <br> <br>
+        <label for="employment">Employment Status<span class="required">*</span></label><br>
+        <select class="gender" required>
+            <option value="" disabled selected hidden>Select employment status</option>
+            <option>Self-employed</option>
+            <option>Contract</option>
+        </select> <br> <br>
+        <label for="school">Choose School<span class="required">*</span></label><br>
+        <select class="gender" required>
+            <option value="" disabled selected hidden>Select school</option>
+            <option>School of Engineering</option>
+            <option>School of Product</option>
+        </select> <br> <br>
+        <label for="how">How did you hear about us?<span class="required">*</span></label><br>
+        <select class="gender" required>
+            <option value="" disabled selected hidden>Select channel</option>
+            <option>Google</option>
+            <option>Friend</option>
+        </select> <br> <br>
+        </div>
+        <div>
+            <label for="lname">Last Name<span class="required">*</span></label><br>
+            <input type="text" name="" id="" placeholder="Enter last name"><br><br>
+            <label for="date">Date of Birth<span class="required">*</span></label><br>
+            <input type="date" name="" id="" placeholder="yyyy/mm/dd"><br><br>
+            <label for="edu">Education Level<span class="required">*</span></label><br>
+            <select class="gender" required>
+                <option value="" disabled selected hidden>Select level of education</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select> <br> <br>
+            <label for="residence">State/City of Residence<span class="required">*</span></label><br>
+            <input type="text" name="" id="" placeholder="Enter your state of residence"><br><br>
+            <label for="phone">Phone Number<span class="required">*</span></label><br>
+            <input type="number" name="" id="" placeholder="08154387000"><br><br>
+            <label for="course">Choose Course of Study<span class="required">*</span></label><br>
+            <select class="gender" required>
+                <option value="" disabled selected hidden>Select course</option>
+                <option>Frontend-Engineering</option>
+                <option>Backend-Engineering</option>
+                <option>Cloud-Engineering</option>
+            </select> <br> <br>
+            <label for="scholarship">Scholarship/Diescount Code <br>(optional)<span class="required">*</span></label><br>
+            <input type="text" name="" id="" placeholder="Scholarship or student ID or ..">
+        </div>
+       </div>
+       <h5>By clicking continue, I agree to<a href="#"> Terms of Use</a> and acknowledge <br>that I <br>
+            have read the <a href="#"> Privacy Policy.</a></h5>
         <button type="submit" value="submit">
-            submit
+            Proceed
         </button>
     </form>
+    <h5>Already have an account? <a href="#"> Sign In</a></h5>
+    <style>
+        .for {
+            display: flex;
+        }
+        .fo {
+            padding-right: 20px;
+        }
+        .required {
+            color:red;
+        }
+    </style>
 </section>
